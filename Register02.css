@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Kanit:wght@100&family=Pattaya&family=Playpen+Sans&family=Roboto+Condensed:wght@300&family=Sriracha&family=Young+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sriracha;
+}
+
+body {
+    background: black;
+}
+
+.main-container {
+    border: white 1px solid;
+    width: 500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    background: white;
+    border-radius: 10px;
+}
+
+.txt-create {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.container-froms {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt-fullname {
+    border: white 1px solid;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    width: 70px;
+    font-size: 15px;
+    background: white;
+    transition: 0.4s;
+}
+
+.input-fullname {
+    width: 350px;
+    height: 45px;
+    border: gray 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-left: 70px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.icon {
+    position: relative;
+    font-size: 25px;
+    border: gainsboro 1px solid;
+    text-align: center;
+    border-radius: 50%;
+    background: gainsboro;
+    right: 40px;
+    top: 5px;
+    transition: 0.4s;
+}
+
+.txt-email {
+    border: white 1px solid;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    font-size: 15px;
+    background: white;
+    width: 96px;
+    transition: 0.4s;
+}
+
+.input-email {
+    width: 350px;
+    height: 45px;
+    border: gray 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-left: 70px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.txt-phonnumber {
+    border: white 1px solid;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    font-size: 15px;
+    background: white;
+    width: 100px;
+    transition: 0.4s;
+}
+
+.input-phonenumber {
+    width: 350px;
+    height: 45px;
+    border: gray 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    margin-left: 70px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.txt-password {
+    border: white 1px solid;
+    position: relative;
+    top: 15px;
+    left: 80px;
+    font-size: 15px;
+    background: white;
+    width: 67px;
+    transition: 0.4s;
+}
+
+.input-passwd {
+    width: 350px;
+    height: 45px;
+    border: gray 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    margin-left: 70px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.txt-cfpassword {
+    position: relative;
+    border: white 1px solid;
+    top: 15px;
+    left: 80px;
+    font-size: 15px;
+    background: white;
+    width: 125px;
+    transition: 0.4s;
+}
+
+.cfpassword {
+    width: 350px;
+    height: 45px;
+    border: gray 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 15px;
+    margin-left: 70px;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Checkbox */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 110px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: gray;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.span-txt {
+    color: black;
+    font-weight: 500;
+}
+
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 90px;
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: black;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 4.5px;
+    bottom: 3.5px;
+    width: 3.5px;
+    height: 7.5px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Button */
+.button-btn {
+    width: 300px;
+    height: 45px;
+    position: relative;
+    display: block;
+    top: -12px;
+    left: 100px;
+    cursor: pointer;
+    border: black 1px solid;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.button-btn:hover {
+    background: gainsboro;
+    color: black;
+    border: gainsboro 1px solid;
+}
+
+/* Link-Login */
+.txt-already {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: gray;
+}
+
+.link-login {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.link-login:hover {
+    color: gainsboro;
+}
+
+@media screen and (max-width: 480px){
+    .main-container {
+        width: 420px;
+    }
+
+    .txt-create {
+        font-size: 25px;
+    }
+
+    .txt-fullname {
+        font-size: 12.5px;
+        left: 45px;
+        top: 13px;
+        font-weight: 600;
+        width: 60px;
+    }
+
+    .input-fullname {
+        width: 355px;
+        margin-left: 30px;
+    }
+
+    .txt-email {
+        font-size: 12.5px;
+        left: 45px;
+        top: 13px;
+        font-weight: 600;
+        width: 83px;
+    }
+
+    .input-email {
+        width: 355px;
+        margin-left: 30px;
+    }
+
+    .txt-phonnumber {
+        font-size: 12.5px;
+        left: 45px;
+        top: 13px;
+        font-weight: 600;
+        width: 86px;
+    }
+
+    .input-phonenumber {
+        width: 355px;
+        margin-left: 30px;
+    }
+
+    .txt-password {
+        font-size: 12.5px;
+        left: 45px;
+        top: 13px;
+        font-weight: 600;
+        width: 58px;
+    }
+
+    .input-passwd {
+        width: 355px;
+        margin-left: 30px;
+    }
+
+    .txt-cfpassword {
+        font-size: 12.5px;
+        left: 45px;
+        top: 13px;
+        font-weight: 600;
+        width: 108px;
+    }
+
+    .cfpassword {
+        width: 355px;
+        margin-left: 30px;
+    }
+
+    .container {
+        right: 46px;
+        font-size: 13.5px;
+    }
+
+    .checkmark {
+        left: 90px;
+    }
+
+    .button-btn {
+        left: 76px;
+        width: 270px;
+    }
+}

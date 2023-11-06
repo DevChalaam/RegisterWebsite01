@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Register02.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Register02</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1 class="txt-create">Create Account</h1>
+
+        <form action="#" method="post" id="container-form">
+            <div class="container-froms">
+                <p class="txt-fullname">Full Name</p>
+                <input type="text" class="input-fullname" id="fullname" required>
+                <i class='bx bxs-user icon'></i><br>
+
+                <p class="txt-email">Email Address</p>
+                <input type="email" class="input-email" id="email" required>
+                <i class='bx bxs-envelope icon' ></i><br>
+
+                <p class="txt-phonnumber">Phone Number</p>
+                <input type="text" class="input-phonenumber" id="phonenumber" required>
+                <i class='bx bxs-phone icon'></i><br>
+
+                <p class="txt-password">Password</p>
+                <input type="password" class="input-passwd" id="password" required>
+                <i class='bx bx-shield-quarter icon'></i><br>
+
+                <p class="txt-cfpassword">Confirm Password</p>
+                <input type="password" class="cfpassword" id="cfpassword" required>
+                <i class='bx bxs-check-circle icon'></i><br>
+
+                <label class="container">Agree with <span class="span-txt">Term & Conditons</span>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+                </label><br>
+
+                <button class="button-btn" id="submit" formaction="#">Create Account</button>
+            </div>
+        </form>
+
+        <p class="txt-already">Already have an account? <a href="#" class="link-login">Login</a></p>
+    </div>
+
+    <script src="/js/Register02.js"></script>
+</body>
+</html>
